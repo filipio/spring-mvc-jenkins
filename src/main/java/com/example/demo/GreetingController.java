@@ -13,4 +13,8 @@ public class GreetingController {
     public Greeting greeting (@RequestParam(value = "name", defaultValue = "World") String name){
         return new Greeting(1, String.format(template, name));
     }
+    @GetMapping("/")
+    public String start(){
+        return "Hello dear user!";
+    }
 }
