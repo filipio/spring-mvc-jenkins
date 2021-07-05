@@ -52,10 +52,9 @@
 				<configuration>
 					<appName>spring-mvc-jenkins</appName>
 					<processTypes>
-						<web>java -Dserver.port=$PORT -jar target/${project.build.finalName}.jar</web>
+						<web>java -jar -Dserver.port=$PORT target/${project.build.finalName}.jar</web>
 					</processTypes>
 				</configuration>
-
 			</plugin>
 		</plugins>
 	</build>
