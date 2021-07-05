@@ -3,6 +3,7 @@
 
        tools {
            maven "M3"
+           jdk "JDK 1.8"
        }
 
        stages {
